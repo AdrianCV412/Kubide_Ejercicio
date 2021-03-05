@@ -22,7 +22,9 @@
     color:#a2b5b3
 }
 
-
+#cabecera{
+    min-width: 1000px;
+}
 
 #icono{
     max-width: 30px;
@@ -54,4 +56,16 @@
 .vl {
     border-left: 1px solid white;
     height: 20px;
-  }
+}
+
+@media (max-width: 520px) { 
+    .menu { 
+        overflow-y: scroll;
+    }
+}
+
+@media (max-width: 760px) { 
+}
+
+@media (max-width: 960px) {
+}
