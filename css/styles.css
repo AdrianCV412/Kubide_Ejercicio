@@ -1,0 +1,57 @@
+#cont_ciudad {
+    background: linear-gradient(to top,#406969bd, #406969bd), url(../images/city.jpg) no-repeat top center;
+}
+
+#cont_mesa {
+    background: linear-gradient(to top,#6aa946f3, #6aa946f3), url(../images/desk.jpg) no-repeat top center;
+}
+
+#white_section{
+    color:white
+}
+
+#green_section{
+    color:green
+}
+
+#title_text{
+    color:#387677
+}
+
+#body_text{
+    color:#a2b5b3
+}
+
+
+
+#icono{
+    max-width: 30px;
+    max-height: 30px;
+}
+
+#nav_link:link{
+    color: rgb(201, 198, 198);
+}
+
+#nav_link:hover{
+    color: white;
+}
+
+#footer_link:link{
+    color: #a2b5b3;
+    text-decoration: none;
+}
+
+#footer_link:hover{
+    color: rgb(71, 71, 71);
+    text-decoration: none;
+}
+
+#icon {
+    fill: green;
+ }
+
+.vl {
+    border-left: 1px solid white;
+    height: 20px;
+  }

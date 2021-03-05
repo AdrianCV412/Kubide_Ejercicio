@@ -8,54 +8,61 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
-    <link type = "text/css" href = "css/styles.css" media = "all" />
-
-    <title>Hello, world!</title>
+    <link href = "css/styles.css" rel="stylesheet" />
+    <title>Ejercicio Kubide</title>
   </head>
 
   <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
     <!--Seccion inicial con header-->
-    <div class="position-relative overflow-hidden text-center">
+    <div class="position-relative overflow-hidden text-center" id="cont_ciudad" >
 
       <!--Header-->
       <div class="container">
         <header class="mb-4">
           <div>
-            <h3 class="float-md-start">WAPIK</h3>
+            <h3 id="white_section" class="float-md-start pe-4"><strong>WAPIK</strong></h3>
+            <div class="vl float-md-start mt-2"></div>
+            <div class="float-md-start ms-4 me-2" id="icono"><img src="images/phone.png" class="img-fluid" alt="t:"></div>
+            <p class="float-md-start mt-1" id="white_section">+62 202 555 0117</p>
             <nav class="nav nav-masthead justify-content-center float-md-end">
-              <a class="nav-link" href="#">HOME</a>
-              <a class="nav-link" href="#">ABOUT US</a>
-              <a class="nav-link" href="#">PRICING</a>
-              <a class="nav-link" href="#">CONTACT US</a>
-              <a class="btn btn-outline-secondary" href="#">GET STARTED</a>
+              <a class="nav-link" id="nav_link" href="#">HOME</a>
+              <a class="nav-link" id="nav_link" href="#">ABOUT US</a>
+              <a class="nav-link" id="nav_link" href="#">PRICING</a>
+              <a class="nav-link" id="nav_link" href="#">CONTACT US</a>
+              <a class="btn btn-secondary" href="#">GET STARTED</a>
             </nav>
           </div>
         </header>
       </div>
 
       <!--Seccion Inicial-->
-      <div class="col-md-5 p-lg-5 mx-auto my-5">
-        <h1 class="display-4 fw-normal mt-5 mb-4">Cras justo odio, dapibus ac facilisis, in egestas eget quam</h1>
-        <a class="btn btn-outline-secondary mb-5" href="#">START YOUR FREE TRIAL</a>
+      <div class="container py-lg-5"><hr id="white_section"></div>
+      <div class="col-md-7 p-lg-5 mx-auto my-5">
+        <h1 id="white_section" class="display-4 fw-thin mt-5 mb-4">Cras justo odio, dapibus ac facilisis, in egestas eget quam</h1>
+        <a class="btn btn-success btn-lg mt-3 mb-5" href="#">START YOUR FREE TRIAL</a>
       </div>
-      <div class="product-device shadow-sm d-none d-md-block"></div>
-      <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+      <div class="container p-lg-5"></div>
     </div>
 
     <!--Seccion "About Us"-->
-    <div class="position-relative overflow-hidden text-center bg-danger">
+    <div class="position-relative overflow-hidden text-center bg-white">
 
       <div class="container p-lg-5">
         <div class="row p-lg-5">
           <div class="row">
             <div class="col-sm">
-              <h1 class="display-6 fw-normal">About Us</h1>
+              <h1 id="title_text" class="display-6 fw-thin">About Us</h1>
             </div>
           </div>
-          <div class="row">
-            <div class="col-sm">
+          <div class="row justify-content-center">
+            <div class="col-2">
+              <div class="container pb-4"><hr id="green_section"></div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-9" id="body_text">
               Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
               eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget
               metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
@@ -67,24 +74,27 @@
         </div>
         <div class="row p-lg-5">
           <div class="col-lg-4">
-            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-    
-            <h2>Ionicons</h2>
-            <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem.</p>
+            <img src="images/ion_green.svg" width="80" height="80">
+            <div class="container my-3" id="title_text">
+              <strong>Ionicons</strong>
+            </div>
+            <p id="body_text">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem.</p>
             
           </div>
           <div class="col-lg-4">
-            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-    
-            <h2>Creative design</h2>
-            <p>Maecenas faucibus mollis interdum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+            <img src="images/flask_green.svg" width="80" height="80"> 
+            <div class="container my-3" id="title_text">
+              <strong>Creative design</strong>
+            </div>  
+            <p id="body_text">Maecenas faucibus mollis interdum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
             
           </div>
           <div class="col-lg-4">
-            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-    
-            <h2>Photoshop and Sketch</h2>
-            <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+            <img src="images/albums_green.svg" width="80" height="80">
+            <div class="container my-3" id="title_text">
+              <strong>Photoshop and Sketch</strong>
+            </div>
+            <p id="body_text">Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
             
           </div>
         </div>
@@ -93,17 +103,22 @@
     </div>
 
     <!--Seccion "Meet Our Team"-->
-    <div class="position-relative overflow-hidden text-center bg-success">
+    <div class="position-relative overflow-hidden text-center bg-light">
 
       <div class="container p-lg-5">
         <div class="row p-lg-5">
           <div class="row">
             <div class="col-sm">
-              <h1 class="display-6 fw-normal">Meet Our Team</h1>
+              <h1 class="display-6 fw-thin" id="title_text">Meet Our Team</h1>
             </div>
           </div>
-          <div class="row">
-            <div class="col-sm">
+          <div class="row justify-content-center">
+            <div class="col-2">
+              <div class="container pb-4"><hr id="green_section"></div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-9" id="body_text">
               Curabitur blandit tempus porttitor. Duis mollis, est non commodo luctusm nisi erat porttitor ligula,
               eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
             </div>
@@ -111,85 +126,94 @@
         </div>
         <div class="row p-lg-5">
           <div class="col-lg-4">
-            <div class="card bg-secondary">
-              <figure class="figure">
-                <img src="images/person2.jpg" class="figure-img img-fluid" alt="Image">
-              </figure>
-              <h class="card-title">Joyce Hudson</h>
-              <p class="card-text">Founder & Designer</p>
-            </div>
-            
-          </div>
-          <div class="col-lg-4">
-            <div class="card bg-secondary">
-              <figure class="figure">
-                <img src="images/person3.jpg" class="figure-img img-fluid" alt="Image">
-              </figure>
-              <h class="card-title">Angela Campbell</h>
-              <p class="card-text">Project Manager</p>
+            <img src="images/person2.jpg" class="figure-img img-fluid" alt="Image">
+            <div class="row justify-content-start">
+              <div class="col-12">
+                <strong class="card-title float-start" id="title_text">Joyce Hudson</strong>
+              </div>
+              <div class="col-12">
+                <p class="card-text float-start" id="body_text">Founder & Designer</p>
+              </div>
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="card bg-secondary">
-              <figure class="figure">
-                <img src="images/person1.jpg" class="figure-img img-fluid" alt="Image">
-              </figure>
-              <h class="card-title">James Walker</h>
-              <p class="card-text">Developer</p>
+            <img src="images/person3.jpg" class="figure-img img-fluid" alt="Image">
+            <div class="row justify-content-start">
+              <div class="col-12">
+                <strong class="card-title float-start" id="title_text">Angela Campbell</strong>
+              </div>
+              <div class="col-12">
+                <p class="card-text float-start" id="body_text">Project Manager</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <img src="images/person1.jpg" class="figure-img img-fluid" alt="Image">           
+            <div class="row justify-content-start">
+              <div class="col-12">
+                <strong class="card-title float-start" id="title_text">James Walker</strong>
+              </div>
+              <div class="col-12">
+                <p class="card-text float-start" id="body_text">Developer</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
     </div>
 
     <!--Seccion "Download it now"-->
-    <div class="position-relative overflow-hidden bg-warning">
+    <div class="position-relative overflow-hidden" id="cont_mesa">
       <div class="container p-lg-5 text-start">
-        <div class="row">
+        <div class="row py-4">
           <div class="col-lg-9">
-            <h1 class="display-7 fw-normal">Do You Like Wapik? Download It Now </h1>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quan venenatis vestibulum.</p>
+            <h2 class="display-7 fw-light" id="white_section">Do You Like Wapik? Download It Now </h2>
+            <p id="white_section">Aenean eu leo quam. Pellentesque ornare sem lacinia quan venenatis vestibulum.</p>
           </div>
   
           <div class="col-lg-3 mt-4">
-            <a class="btn btn-outline-secondary" href="#">DOWNLOAD NOW! - FOREVER FREE</a>
+            <a class="btn btn-success" href="#" id="white_section"> DOWNLOAD NOW! - FOREVER FREE</a>
           </div>
         </div>
     </div>
 
     <!--Seccion final con footer-->
-    <div class="position-relative overflow-hidden bg-info">
+    <div class="position-relative overflow-hidden bg-light">
 
       <!--Seccion final-->
       <div class="container p-lg-5 text-start">
         <div class="row">
           <div class="col-lg-3">
-            <p class="h3"> WAPIK</p>
-            <p>@: hi@wapik.com</p>
-            <p>p: +62 202 555 0117</p>
-            <p>a: 610 Overlook Circle Suite 323 Kalamazoo, MI 49009</p>
+            <p class="h3" id="title_text"> WAPIK</p>
+            <p id="body_text">@: hi@wapik.com</p>
+            <p id="body_text">p: +62 202 555 0117</p>
+            <p id="body_text">a: 610 Overlook Circle Suite 323 Kalamazoo, MI 49009</p>
           </div>
           <div class="col-lg-3">
-            <strong>Company</strong>
-            <p>Home</p>
-            <p>About Us</p>
-            <p>Pricing</p>
-            <p>Contact Us</p>
+            <strong id="title_text">Company</strong>
+            <div class="container mb-3"></div>
+            <p><a id="footer_link" href="#">Home</a></p>
+            <p><a id="footer_link" href="#">About Us</a></p>
+            <p><a id="footer_link" href="#">Pricing</a></p>
+            <p><a id="footer_link" href="#">Contact Us</a></p>
           </div>
           <div class="col-lg-3">
-            <strong>Others</strong>
-            <p>Help & Support</p>
-            <p>Privacy Policy</p>
-            <p>Terms</p>
-            <p>Sitemap</p>
+            <strong id="title_text">Others</strong>
+            <div class="container mb-3"></div>
+            <p><a id="footer_link" href="#">Help & Support</a></p>
+            <p><a id="footer_link" href="#">Privacy Policy</a></p>
+            <p><a id="footer_link" href="#">Terms</a></p>
+            <p><a id="footer_link" href="#">Sitemap</a></p>
           </div>
           <div class="col-lg-3">
-            <strong>Newsletter</strong>
-            <p>Subscribe to our newsletter and get all the cool news</p>
+            <strong id="title_text">Newsletter</strong>
+            <div class="container mb-3"></div>
+            <p id="body_text">Subscribe to our newsletter and get all the cool news</p>
             <div class="input-group">
               <input type="text" class="form-control" placeholder="Enter email">
-              <button type="submit" class="btn btn-secondary">^</button>
+              <button type="submit" class="btn btn-outline-secondary">
+                <img src="images/paper_plane_green.svg" width="20" height="20"> 
+              </button>
             </div> 
           </div>
         </div>
@@ -197,10 +221,18 @@
 
       <!--Footer-->
       <div class="container">
+        <div class="container"><hr id="green_section"></div>
         <footer class="mb-auto">
           <div>
-            <p class="float-md-start">All rights reserved 2015.</p>
-            <p class="float-md-end">Iconos Redes</p>
+            <p class="float-md-start" id="body_text">All rights reserved 2015.</p>
+            <div class="float-md-end pb-3">
+              <img class="mx-1" src="images/twitter_color.svg" width="35" height="35">
+              <img class="mx-1" src="images/facebook_color.svg" width="35" height="35">
+              <img class="mx-1" src="images/instagram_color.svg" width="35" height="35">
+              <img class="mx-1" src="images/dribble_color.svg" width="35" height="35">
+              <img class="mx-1" src="images/reddit_color.svg" width="35" height="35">
+            </div>
+           
           </div>
         </footer>
       </div>
